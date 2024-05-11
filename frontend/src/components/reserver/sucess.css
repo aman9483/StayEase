@@ -1,0 +1,54 @@
+.orderSuccess {
+    margin: auto;
+    text-align: center;
+    padding: 10vmax;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tickIcon {
+    font-size: 7vmax; /* Adjust size as needed */
+    color: green;
+    animation: pop 0.5s ease-in-out;
+  }
+  
+  @keyframes pop {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+  }
+  
+  .orderSuccess > p {
+    font-size: 2vmax;
+  }
+  
+  .orderSuccess > a {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border: none;
+    padding: 1vmax 3vmax;
+    cursor: pointer;
+    font: 400 1vmax "Roboto";
+    text-decoration: none;
+    margin: 2vmax;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .orderSuccess > a {
+      padding: 3vw 6vw;
+      font: 400 4vw "Roboto";
+      margin: 2vmax;
+    }
+  
+    .tickIcon {
+      font-size: 20vw;
+    }
+    .orderSuccess > p {
+      margin: 2vmax;
+      font-size: 5vw;
+    }
+  }
+  
